@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2FF835250FD077000E124D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF834250FD077000E124D /* RxSwift */; };
+		CB2FF837250FD077000E124D /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF836250FD077000E124D /* RxTest */; };
+		CB2FF839250FD077000E124D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF838250FD077000E124D /* RxRelay */; };
+		CB2FF83B250FD077000E124D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF83A250FD077000E124D /* RxCocoa */; };
+		CB2FF83D250FD077000E124D /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF83C250FD077000E124D /* RxBlocking */; };
+		CB2FF840250FD08C000E124D /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF83F250FD08C000E124D /* RxMoya */; };
+		CB2FF843250FD0A6000E124D /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF842250FD0A6000E124D /* RIBs */; };
 		CB311E9E250FB3420040CEEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311E9D250FB3420040CEEA /* AppDelegate.swift */; };
 		CB311EA0250FB3420040CEEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311E9F250FB3420040CEEA /* SceneDelegate.swift */; };
 		CB311EA2250FB3420040CEEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311EA1250FB3420040CEEA /* ViewController.swift */; };
@@ -34,6 +41,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB311F43250FC8420040CEEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CB311E9A250FB3420040CEEA /* YouTube-SH-OH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube-SH-OH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB311E9D250FB3420040CEEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2FF840250FD08C000E124D /* RxMoya in Frameworks */,
+				CB2FF83B250FD077000E124D /* RxCocoa in Frameworks */,
+				CB2FF843250FD0A6000E124D /* RIBs in Frameworks */,
+				CB2FF83D250FD077000E124D /* RxBlocking in Frameworks */,
+				CB2FF839250FD077000E124D /* RxRelay in Frameworks */,
+				CB2FF835250FD077000E124D /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2FF837250FD077000E124D /* RxTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +103,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB2FF844250FD123000E124D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CB2FF846250FD152000E124D /* AppDelegate */,
+				CB2FF845250FD132000E124D /* Resources */,
+				CB2FF847250FD16F000E124D /* Scenes */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CB2FF845250FD132000E124D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB311EA6250FB3430040CEEA /* Assets.xcassets */,
+				CB311EA8250FB3430040CEEA /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB2FF846250FD152000E124D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CB311E9D250FB3420040CEEA /* AppDelegate.swift */,
+				CB311E9F250FB3420040CEEA /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CB2FF847250FD16F000E124D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CB2FF84B250FD40F000E124D /* UIVIewController */,
+				CB2FF848250FD19C000E124D /* Interfaces */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CB2FF848250FD19C000E124D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CB311EA3250FB3420040CEEA /* Main.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CB2FF849250FD1B0000E124D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CB2FF84A250FD1B9000E124D /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		CB2FF84B250FD40F000E124D /* UIVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB311EA1250FB3420040CEEA /* ViewController.swift */,
+			);
+			path = UIVIewController;
+			sourceTree = "<group>";
+		};
 		CB311E91250FB3420040CEEA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +177,7 @@
 				CB311EB3250FB3430040CEEA /* YouTube-SH-OHTests */,
 				CB311EBE250FB3430040CEEA /* YouTube-SH-OHUITests */,
 				CB311E9B250FB3420040CEEA /* Products */,
+				CB311F22250FC1E20040CEEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +194,10 @@
 		CB311E9C250FB3420040CEEA /* YouTube-SH-OH */ = {
 			isa = PBXGroup;
 			children = (
-				CB311E9D250FB3420040CEEA /* AppDelegate.swift */,
-				CB311E9F250FB3420040CEEA /* SceneDelegate.swift */,
-				CB311EA1250FB3420040CEEA /* ViewController.swift */,
-				CB311EA3250FB3420040CEEA /* Main.storyboard */,
-				CB311EA6250FB3430040CEEA /* Assets.xcassets */,
-				CB311EA8250FB3430040CEEA /* LaunchScreen.storyboard */,
 				CB311EAB250FB3430040CEEA /* Info.plist */,
+				CB2FF844250FD123000E124D /* Application */,
+				CB2FF849250FD1B0000E124D /* Domain */,
+				CB2FF84A250FD1B9000E124D /* Platform */,
 			);
 			path = "YouTube-SH-OH";
 			sourceTree = "<group>";
@@ -128,6 +220,13 @@
 			path = "YouTube-SH-OHUITests";
 			sourceTree = "<group>";
 		};
+		CB311F22250FC1E20040CEEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,12 +237,21 @@
 				CB311E96250FB3420040CEEA /* Sources */,
 				CB311E97250FB3420040CEEA /* Frameworks */,
 				CB311E98250FB3420040CEEA /* Resources */,
+				CB311F43250FC8420040CEEA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "YouTube-SH-OH";
+			packageProductDependencies = (
+				CB2FF834250FD077000E124D /* RxSwift */,
+				CB2FF838250FD077000E124D /* RxRelay */,
+				CB2FF83A250FD077000E124D /* RxCocoa */,
+				CB2FF83C250FD077000E124D /* RxBlocking */,
+				CB2FF83F250FD08C000E124D /* RxMoya */,
+				CB2FF842250FD0A6000E124D /* RIBs */,
+			);
 			productName = "YouTube-SH-OH";
 			productReference = CB311E9A250FB3420040CEEA /* YouTube-SH-OH.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +270,9 @@
 				CB311EB2250FB3430040CEEA /* PBXTargetDependency */,
 			);
 			name = "YouTube-SH-OHTests";
+			packageProductDependencies = (
+				CB2FF836250FD077000E124D /* RxTest */,
+			);
 			productName = "YouTube-SH-OHTests";
 			productReference = CB311EB0250FB3430040CEEA /* YouTube-SH-OHTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -216,6 +327,11 @@
 				Base,
 			);
 			mainGroup = CB311E91250FB3420040CEEA;
+			packageReferences = (
+				CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CB2FF83E250FD08C000E124D /* XCRemoteSwiftPackageReference "Moya" */,
+				CB2FF841250FD0A6000E124D /* XCRemoteSwiftPackageReference "RIBs" */,
+			);
 			productRefGroup = CB311E9B250FB3420040CEEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +536,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -590,6 +706,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		CB2FF83E250FD08C000E124D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		CB2FF841250FD0A6000E124D /* XCRemoteSwiftPackageReference "RIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB2FF834250FD077000E124D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CB2FF836250FD077000E124D /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		CB2FF838250FD077000E124D /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		CB2FF83A250FD077000E124D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CB2FF83C250FD077000E124D /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF833250FD077000E124D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		CB2FF83F250FD08C000E124D /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF83E250FD08C000E124D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		CB2FF842250FD0A6000E124D /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB2FF841250FD0A6000E124D /* XCRemoteSwiftPackageReference "RIBs" */;
+			productName = RIBs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB311E92250FB3420040CEEA /* Project object */;
 }
