@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import RIBs
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    
+    private var launchRouter: LaunchRouting?
+    
+    func scene(_ scene: UIScene,
+               willConnectTo session: UISceneSession,
+               options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: scene)
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: scene)
+        self.window = window
+        self.launchRouter = RootBuilder(dependency: AppComponent()).build()
+        self.launchRouter?.launch(from: window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

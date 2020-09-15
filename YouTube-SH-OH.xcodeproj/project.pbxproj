@@ -14,14 +14,31 @@
 		CB2FF83D250FD077000E124D /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF83C250FD077000E124D /* RxBlocking */; };
 		CB2FF840250FD08C000E124D /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF83F250FD08C000E124D /* RxMoya */; };
 		CB2FF843250FD0A6000E124D /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = CB2FF842250FD0A6000E124D /* RIBs */; };
+		CB2FF84D250FD509000E124D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2FF84C250FD509000E124D /* AppConstants.swift */; };
 		CB311E9E250FB3420040CEEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311E9D250FB3420040CEEA /* AppDelegate.swift */; };
 		CB311EA0250FB3420040CEEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311E9F250FB3420040CEEA /* SceneDelegate.swift */; };
-		CB311EA2250FB3420040CEEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311EA1250FB3420040CEEA /* ViewController.swift */; };
-		CB311EA5250FB3420040CEEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB311EA3250FB3420040CEEA /* Main.storyboard */; };
+		CB311EA5250FB3420040CEEA /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB311EA3250FB3420040CEEA /* RootViewController.storyboard */; };
 		CB311EA7250FB3430040CEEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB311EA6250FB3430040CEEA /* Assets.xcassets */; };
 		CB311EAA250FB3430040CEEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB311EA8250FB3430040CEEA /* LaunchScreen.storyboard */; };
 		CB311EB5250FB3430040CEEA /* YouTube_SH_OHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311EB4250FB3430040CEEA /* YouTube_SH_OHTests.swift */; };
 		CB311EC0250FB3430040CEEA /* YouTube_SH_OHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB311EBF250FB3430040CEEA /* YouTube_SH_OHUITests.swift */; };
+		CB3385922511062600507CAB /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385912511062600507CAB /* AppComponent.swift */; };
+		CB338597251108D100507CAB /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB338593251108D100507CAB /* RootRouter.swift */; };
+		CB338598251108D100507CAB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB338594251108D100507CAB /* RootViewController.swift */; };
+		CB338599251108D100507CAB /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB338595251108D100507CAB /* RootBuilder.swift */; };
+		CB33859A251108D100507CAB /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB338596251108D100507CAB /* RootInteractor.swift */; };
+		CB3385A42511155D00507CAB /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33859F2511155D00507CAB /* MainRouter.swift */; };
+		CB3385A52511155D00507CAB /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3385A02511155D00507CAB /* MainViewController.storyboard */; };
+		CB3385A62511155D00507CAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385A12511155D00507CAB /* MainViewController.swift */; };
+		CB3385A72511155D00507CAB /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385A22511155D00507CAB /* MainBuilder.swift */; };
+		CB3385A82511155D00507CAB /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385A32511155D00507CAB /* MainInteractor.swift */; };
+		CB3385AB2511164600507CAB /* RootViewControllable+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385AA2511164600507CAB /* RootViewControllable+Extentions.swift */; };
+		CB3385B225111C6000507CAB /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385AD25111C6000507CAB /* AuthRouter.swift */; };
+		CB3385B325111C6000507CAB /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3385AE25111C6000507CAB /* AuthViewController.storyboard */; };
+		CB3385B425111C6000507CAB /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385AF25111C6000507CAB /* AuthViewController.swift */; };
+		CB3385B525111C6000507CAB /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385B025111C6000507CAB /* AuthBuilder.swift */; };
+		CB3385B625111C6000507CAB /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385B125111C6000507CAB /* AuthInteractor.swift */; };
+		CB3385B82511233900507CAB /* RootComponent+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3385B72511233900507CAB /* RootComponent+Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +72,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB2FF84C250FD509000E124D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		CB311E9A250FB3420040CEEA /* YouTube-SH-OH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube-SH-OH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB311E9D250FB3420040CEEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB311E9F250FB3420040CEEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB311EA1250FB3420040CEEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB311EA4250FB3420040CEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB311EA4250FB3420040CEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RootViewController.storyboard; sourceTree = "<group>"; };
 		CB311EA6250FB3430040CEEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB311EA9250FB3430040CEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB311EAB250FB3430040CEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +86,23 @@
 		CB311EBB250FB3430040CEEA /* YouTube-SH-OHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YouTube-SH-OHUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB311EBF250FB3430040CEEA /* YouTube_SH_OHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTube_SH_OHUITests.swift; sourceTree = "<group>"; };
 		CB311EC1250FB3430040CEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3385912511062600507CAB /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		CB338593251108D100507CAB /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		CB338594251108D100507CAB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CB338595251108D100507CAB /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		CB338596251108D100507CAB /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		CB33859F2511155D00507CAB /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		CB3385A02511155D00507CAB /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		CB3385A12511155D00507CAB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CB3385A22511155D00507CAB /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		CB3385A32511155D00507CAB /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		CB3385AA2511164600507CAB /* RootViewControllable+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewControllable+Extentions.swift"; sourceTree = "<group>"; };
+		CB3385AD25111C6000507CAB /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		CB3385AE25111C6000507CAB /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		CB3385AF25111C6000507CAB /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		CB3385B025111C6000507CAB /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
+		CB3385B125111C6000507CAB /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		CB3385B72511233900507CAB /* RootComponent+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+Auth.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +140,12 @@
 		CB2FF844250FD123000E124D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				CB3385AC25111C4F00507CAB /* Auth */,
+				CB3385A92511162C00507CAB /* Extentions */,
 				CB2FF846250FD152000E124D /* AppDelegate */,
+				CB33859E2511153400507CAB /* Main */,
 				CB2FF845250FD132000E124D /* Resources */,
-				CB2FF847250FD16F000E124D /* Scenes */,
+				CB338586251102A600507CAB /* Root */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -125,32 +162,17 @@
 		CB2FF846250FD152000E124D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				CB3385912511062600507CAB /* AppComponent.swift */,
 				CB311E9D250FB3420040CEEA /* AppDelegate.swift */,
 				CB311E9F250FB3420040CEEA /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		CB2FF847250FD16F000E124D /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				CB2FF84B250FD40F000E124D /* UIVIewController */,
-				CB2FF848250FD19C000E124D /* Interfaces */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		CB2FF848250FD19C000E124D /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				CB311EA3250FB3420040CEEA /* Main.storyboard */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
 		CB2FF849250FD1B0000E124D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				CB2FF84C250FD509000E124D /* AppConstants.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -160,14 +182,6 @@
 			children = (
 			);
 			path = Platform;
-			sourceTree = "<group>";
-		};
-		CB2FF84B250FD40F000E124D /* UIVIewController */ = {
-			isa = PBXGroup;
-			children = (
-				CB311EA1250FB3420040CEEA /* ViewController.swift */,
-			);
-			path = UIVIewController;
 			sourceTree = "<group>";
 		};
 		CB311E91250FB3420040CEEA = {
@@ -225,6 +239,51 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB338586251102A600507CAB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CB338595251108D100507CAB /* RootBuilder.swift */,
+				CB3385B72511233900507CAB /* RootComponent+Auth.swift */,
+				CB338596251108D100507CAB /* RootInteractor.swift */,
+				CB338593251108D100507CAB /* RootRouter.swift */,
+				CB338594251108D100507CAB /* RootViewController.swift */,
+				CB311EA3250FB3420040CEEA /* RootViewController.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CB33859E2511153400507CAB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB3385A02511155D00507CAB /* MainViewController.storyboard */,
+				CB3385A22511155D00507CAB /* MainBuilder.swift */,
+				CB3385A32511155D00507CAB /* MainInteractor.swift */,
+				CB33859F2511155D00507CAB /* MainRouter.swift */,
+				CB3385A12511155D00507CAB /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB3385A92511162C00507CAB /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CB3385AA2511164600507CAB /* RootViewControllable+Extentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CB3385AC25111C4F00507CAB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CB3385AE25111C6000507CAB /* AuthViewController.storyboard */,
+				CB3385B025111C6000507CAB /* AuthBuilder.swift */,
+				CB3385B125111C6000507CAB /* AuthInteractor.swift */,
+				CB3385AD25111C6000507CAB /* AuthRouter.swift */,
+				CB3385AF25111C6000507CAB /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,9 +407,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3385A52511155D00507CAB /* MainViewController.storyboard in Resources */,
 				CB311EAA250FB3430040CEEA /* LaunchScreen.storyboard in Resources */,
+				CB3385B325111C6000507CAB /* AuthViewController.storyboard in Resources */,
 				CB311EA7250FB3430040CEEA /* Assets.xcassets in Resources */,
-				CB311EA5250FB3420040CEEA /* Main.storyboard in Resources */,
+				CB311EA5250FB3420040CEEA /* RootViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +436,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB311EA2250FB3420040CEEA /* ViewController.swift in Sources */,
+				CB3385B225111C6000507CAB /* AuthRouter.swift in Sources */,
 				CB311E9E250FB3420040CEEA /* AppDelegate.swift in Sources */,
+				CB3385A62511155D00507CAB /* MainViewController.swift in Sources */,
+				CB3385B82511233900507CAB /* RootComponent+Auth.swift in Sources */,
+				CB3385922511062600507CAB /* AppComponent.swift in Sources */,
+				CB3385B625111C6000507CAB /* AuthInteractor.swift in Sources */,
+				CB338598251108D100507CAB /* RootViewController.swift in Sources */,
+				CB3385B525111C6000507CAB /* AuthBuilder.swift in Sources */,
 				CB311EA0250FB3420040CEEA /* SceneDelegate.swift in Sources */,
+				CB338597251108D100507CAB /* RootRouter.swift in Sources */,
+				CB3385B425111C6000507CAB /* AuthViewController.swift in Sources */,
+				CB3385AB2511164600507CAB /* RootViewControllable+Extentions.swift in Sources */,
+				CB3385A42511155D00507CAB /* MainRouter.swift in Sources */,
+				CB3385A72511155D00507CAB /* MainBuilder.swift in Sources */,
+				CB33859A251108D100507CAB /* RootInteractor.swift in Sources */,
+				CB2FF84D250FD509000E124D /* AppConstants.swift in Sources */,
+				CB338599251108D100507CAB /* RootBuilder.swift in Sources */,
+				CB3385A82511155D00507CAB /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,12 +489,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CB311EA3250FB3420040CEEA /* Main.storyboard */ = {
+		CB311EA3250FB3420040CEEA /* RootViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CB311EA4250FB3420040CEEA /* Base */,
 			);
-			name = Main.storyboard;
+			name = RootViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		CB311EA8250FB3430040CEEA /* LaunchScreen.storyboard */ = {
